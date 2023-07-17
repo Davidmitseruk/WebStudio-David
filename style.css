@@ -10,6 +10,51 @@
 --port-button-color:#EEEEEE;
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+ margin-bottom: 0 ;
+ margin-top: 0 ;
+
+}
+ ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ a{
+    text-decoration: none ;
+    cursor: pointer;
+ }
+ img{
+    display: block;
+ }
+
+ .container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+ }
+
+ body{
+    
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;  
+}
+
+
 .site-list{
     color:var(--title-text-color);
 font-family: 'Roboto';
@@ -51,13 +96,7 @@ footer{
     padding: 20px;
     
 }
-body{
-    
-    color: var(--primary-text-color);
-    background-color: var(--primary-background-color);
-    font-family: 'Roboto';
-    font-size: 14px;  
-}
+
 /*header*/
 
 .contacts{
@@ -87,17 +126,17 @@ header{
 }
 .web{
     color: var(--background-button-color);
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
 .studio{
     color: var(--logo-color);
-    font-family: 'Raleway'sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
 .studio-white{
     color: var(--primary-background-color);
-    font-family: 'Raleway'sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
 .post{
@@ -110,7 +149,7 @@ header{
 .post-title{
     color: var(--primary-background-color);
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 44px;
     font-style: normal;
     font-weight: 900;
@@ -182,7 +221,6 @@ header{
 }
 .team-name{
     color: var(--title-text-color);
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
@@ -191,7 +229,6 @@ header{
 }
 .team-position{
     color: var(--primary-text-color);
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -204,16 +241,19 @@ header{
     background-color: var(--port-button-color);
     cursor: pointer;
     border: none;
-    font-family: Roboto;
+    width: 125px;
+    height: 38px;
+    border-radius: 4px;
+    background: #F5F4FA;
 }
 .port-button:hover{
     background-color: var(--background-button-color);
     color: var(--primary-background-color);
 }
-.port.class{
-    background-color: var(--port-button-color);
+.port-class{
+    background-color: var(--primary-background-color);
     margin: 30px;
-    border: 1px solid #EEE;
+    border: 1px solid var(--port-button-color);
 }
 .port-info{
     color: var(--primary-text-color);
@@ -231,6 +271,22 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 0.78px;
 }
+.title{
+    text-align: center;
+    margin-bottom: 50px ;
+    color: var(--title-text-color);
+}
+.activity{
+    padding-bottom: 94px;
+}
+.header-mailnumber{
+    color: var(--primary-text-color);
+}
+.header-mailnumber:hover,
+.header-mailnumber:focus{
+    color: var(--background-button-color);
+}
+
 
 
 
