@@ -45,7 +45,7 @@ p{
     padding-right: 15px;
     margin: 0 auto;
  }
- 
+
 
  body{
     
@@ -177,6 +177,7 @@ header{
     margin-bottom:50px ;
 }
 /*benefits*/
+
 .benefits-name{
     color: var(--title-text-color);
     font-size: 14px;
@@ -212,6 +213,10 @@ header{
 /* OUR TEAM */
 .team{
     background-color: var(--team-color);
+    padding-left: 215px;
+    padding-right: 215px;
+    padding-top: 186px;
+    padding-bottom: 94px;
 }
 .team-card{
     background-color: var(--primary-background-color);
