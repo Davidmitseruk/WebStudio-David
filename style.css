@@ -65,6 +65,10 @@ font-weight: 500;
 line-height: normal;
 letter-spacing: 0.28px;
 list-style: none;
+display: flex;
+}
+.header-list-item:not(:last-child){
+    margin-right: 50px;
 }
 .site-link{
     text-decoration: none;
@@ -99,7 +103,23 @@ footer{
 }
 
 /*header*/
-
+.header-list-item{
+    margin-bottom:34px ;
+    margin-top:34px ;
+}
+header{
+    margin:32px ;
+}
+.contacts-list{
+    padding-left: 344px;
+    display: flex;
+}
+.header-mail{
+margin-right: 50px ;
+}
+.header-number{
+margin: 0px;
+}
 .contacts{
     color: var(--title-text-color);
     
@@ -125,6 +145,11 @@ footer{
 header{
     background: var(--primary-background-color);
 }
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .web{
     color: var(--background-button-color);
     font-family: 'Raleway', sans-serif;
@@ -146,6 +171,7 @@ header{
     padding-left:452px ;
     padding-right:452px ;
     padding-bottom: 200px;
+    margin-bottom:94px ;
 }
 .post-title{
     color: var(--primary-background-color);
@@ -177,7 +203,19 @@ header{
     margin-bottom:50px ;
 }
 /*benefits*/
-
+.benefits{
+    margin-bottom: 118px;
+}
+.benefits-list{
+    display: flex;
+    align-items: flex-start;
+}
+.benefits-block{
+    width: 270px;
+}
+.benefits-block:not(:last-child){
+    margin-right: 30px;
+}
 .benefits-name{
     color: var(--title-text-color);
     font-size: 14px;
@@ -195,6 +233,10 @@ header{
     line-height: 24px;
 }
 /*what do we do*/
+.activity-list{
+    display: flex;
+    justify-content: space-between;
+}
 .activity{
     background-color: var(--primary-background-color);
 }
@@ -211,19 +253,22 @@ header{
 }
 
 /* OUR TEAM */
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
 .team{
     background-color: var(--team-color);
-    padding-left: 215px;
-    padding-right: 215px;
-    padding-top: 186px;
+    padding-top: 50px;
     padding-bottom: 94px;
 }
 .team-card{
     background-color: var(--primary-background-color);
-    margin: 50px;
     width: 270px;
-
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.team-card:not(:last-child){
+    margin-right: 30px;
 }
 .team-name{
     color: var(--title-text-color);
@@ -232,6 +277,8 @@ header{
     line-height: normal;
     letter-spacing: 0.48px;
     text-align: center;
+    margin-top: 30px ;
+    margin-bottom: 10px;
 }
 .team-position{
     color: var(--primary-text-color);
@@ -241,6 +288,7 @@ header{
     line-height: normal;
     letter-spacing: 0.48px;
     text-align: center;
+    margin-bottom: 30px;
 }
 /*port*/
 .port-button{
@@ -285,11 +333,14 @@ letter-spacing: 0.78px;
 .activity{
     padding-bottom: 94px;
 }
-.header-mailnumber{
+.header-mail,
+.header-number{
     color: var(--primary-text-color);
 }
-.header-mailnumber:hover,
-.header-mailnumber:focus{
+.header-mailnumber,
+.header-number:hover,
+.header-mail,
+.header-number:focus{
     color: var(--background-button-color);
 }
 
