@@ -81,6 +81,8 @@ display: flex;
 
 footer{
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 
@@ -196,11 +198,39 @@ header{
     border: none;
     padding: 10px 32px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .port-div{
     margin-top: 94px;
     margin-bottom:50px ;
+    display: flex;
+    justify-content: center;
+}
+.port-class{
+    background-color: var(--primary-background-color);
+    width: 370px;
+    height: 404px;
+    margin-right: +30px;
+    margin-bottom: 30px;
+
+}
+.port-img{
+    width:370px ;
+}
+.port-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+.port-name{
+   margin-top: 20px ;
+    margin-left: 24px;
+    margin-bottom: 13px;
+}
+.port-info{
+    margin-left: 24px;
 }
 /*benefits*/
 .benefits{
@@ -306,7 +336,6 @@ header{
 }
 .port-class{
     background-color: var(--primary-background-color);
-    margin: 30px;
     border: 1px solid var(--port-button-color);
 }
 .port-info{
