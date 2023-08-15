@@ -84,6 +84,33 @@ footer{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.always-clients{
+    height: 372px;
+    background-color: var(--primary-background-color);
+}
+.always-title{
+    text-align: center;
+    margin-top: 94px ;
+    color: #212121;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+.background-picture{
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    margin-top: 66px;
+}
+.always-flex{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 .footer-logo{
@@ -233,6 +260,17 @@ header{
     margin-left: 24px;
 }
 /*benefits*/
+.benefits-pictures{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.benefits-picture{
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    margin-bottom: 30px;
+}
 .benefits{
     margin-bottom: 118px;
 }
