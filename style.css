@@ -78,6 +78,14 @@ display: flex;
 .site-link:focus{
     color: var(--background-button-color);
 }
+.address-text{
+    margin-bottom: 9px;
+    font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.42px;
+}
 
 footer{
     background-color: #2F303A;
@@ -115,6 +123,7 @@ footer{
 
 .footer-logo{
     color: var(--primary-background-color);
+    margin-bottom: 20px;
     
 }
 .footer{
@@ -227,6 +236,7 @@ header{
     margin: 0 auto;
     display: flex;
     align-items: center;
+    margin-right: 8px;
 }
 
 .port-div{
