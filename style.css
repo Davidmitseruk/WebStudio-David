@@ -182,6 +182,7 @@ margin: 0px;
 
 header{
     background: var(--primary-background-color);
+    border: 1px solid rgb(205, 219, 233);
 }
 .header-wrapper{
     display: flex;
@@ -261,6 +262,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    
 }
 .port-name{
    margin-top: 20px ;
@@ -378,6 +380,7 @@ header{
     height: 38px;
     border-radius: 4px;
     background: #F5F4FA;
+    margin-right: 8px;
 }
 .port-button:hover{
     background-color: var(--background-button-color);
