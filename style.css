@@ -181,8 +181,7 @@ margin: 0px;
 }
 
 header{
-    background: var(--primary-background-color);
-    border: 1px solid rgb(205, 219, 233);
+    background: var(--primary-background-color);               
 }
 .header-wrapper{
     display: flex;
