@@ -275,13 +275,25 @@ header{
 .benefits-pictures{
     display: flex;
     justify-content: space-between;
-    
+   
 }
 .benefits-picture{
     width: 270px;
     height: 120px;
     background: #F5F4FA;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    content: '';
+    background-image: url(img/before-imgs/antenna\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.benefits-picture:nth-child(1)::before{
+    content: '';
+    background-image: url(img/before-imgs/antenna\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .benefits{
     margin-bottom: 118px;
