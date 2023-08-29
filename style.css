@@ -284,16 +284,9 @@ header{
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
-    content: '';
-    background-image: url(img/before-imgs/antenna\ 1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
-.benefits-picture:nth-child(1)::before{
-    content: '';
-    background-image: url(img/before-imgs/antenna\ 1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+.benefits-picture:before{
+
 }
 .benefits{
     margin-bottom: 118px;
