@@ -154,9 +154,14 @@ header{
 }
 .header-mail{
 margin-right: 50px ;
+color: var(--primary-text-color);
 }
 .header-number{
 margin: 0px;
+}
+.header-mail:hover,
+.header-mail:focus{
+    color: var(--background-button-color);
 }
 .contacts{
     color: var(--title-text-color);
@@ -258,10 +263,13 @@ header{
     background-color: var(--primary-background-color);
     width: 370px;
     height: 404px;
-    margin-right: +30px;
+    margin-right: 30px;
     margin-bottom: 30px;
-
 }
+/*.port-class:last-child{
+    margin-left: -30px;
+}
+*/
 .port-img{
     width:370px ;
 }
@@ -368,6 +376,7 @@ header{
     background-color: var(--primary-background-color);
     width: 270px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-card:not(:last-child){
     margin-right: 30px;
@@ -437,11 +446,10 @@ letter-spacing: 0.78px;
 }
 .header-mail,
 .header-number{
-    color: var(--primary-text-color);
+color: var(--primary-text-color);
 }
-.header-mailnumber,
 .header-number:hover,
-.header-mail,
+.header-mail:hover,
 .header-number:focus{
     color: var(--background-button-color);
 }
