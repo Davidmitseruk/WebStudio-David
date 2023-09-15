@@ -407,12 +407,13 @@ header{
 .port-button{
     background-color: var(--port-button-color);
     cursor: pointer;
-    border: none;
-    width: 125px;
-    height: 38px;
+    border: none; 
     border-radius: 4px;
     background: #F5F4FA;
     margin-right: 8px;
+    padding: 6px 25px;
+    font-size: 16px;
+    font-weight: 500;
 }
 .port-button:hover{
     background-color: var(--background-button-color);
