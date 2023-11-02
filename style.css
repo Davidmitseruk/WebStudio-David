@@ -141,6 +141,12 @@ footer{
 }
 
 /*header*/
+.contacts-list .header-number:hover{
+    color: aqua;
+}
+.header-number:hover .icon-phone{
+    fill: aqua;
+}
 .header-list-item{
     margin-bottom:34px ;
     margin-top:34px ;
