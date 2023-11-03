@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <header class="header container">
-            <div class="header-wrapper">
+        <header class="header">
+            <div class="container header-wrapper">
                 <a href="./index.html" class="logo">
                      <span class="web">Web</span><span class="studio">Studio</span></a>
                 <nav class="site-nav">
@@ -21,7 +20,7 @@
                         <a class="site-link" href="/index.html" class="ctudiya">Студія</a>
                     </li>
                     <li class="header-list-item">
-                        <a class="site-link" href="/portfolio.html" class="portfolio">Портфоліо</a>
+                        <a class="site-link" href="./portfolio.html" class="portfolio">Портфоліо</a>
                     </li>
                     <li class="header-list-item">
                         <a class="site-link" href="#" class="contacts">Контакти</a>
@@ -29,18 +28,28 @@
                     </ul>
                 </nav>
                 <ul class="contacts-list">
-                    <li>
-                        <a href="Mailto:info@devstudio.com" class="header-mail">info@devstudio.com</a>
+                    <li class="contacts-item mail">
+                        <a href="mailto:info@devstudio.com" class="header-number">
+                            <svg width="16" height="12" class="icon-envelope">
+                                <use href="./img/always-client/symbol-defs.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
-                    <li>
-                        <a href="tel:+38 096 111 11 11" class="header-number">+38 096 111 11 11</a>
+                    <li class="contacts-item">
+                        <a href="tel:+38 096 111 11 11" class="header-number">
+                            <svg width="10" height="16" class="icon-phone">
+                                <use href="./img/always-client/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                             +38 096 111 11 11
+                            </a>
                     </li>
                 </ul>
             </div>
-      
     </header>
         <main>
             <section class="portfolio-one container">
+                <div class="container">
                 <div class="port-div"> <button type="button" class="port-button">Усі</button>                     
                     
                     <button type="button" class="port-button">Веб-сайти</button>                       
@@ -100,25 +109,21 @@
                         <p class="port-info">Додаток</p>
                     </li>
                 </ul>
-            </section>
-           
-  
-            <footer class="footer container">
-            
-                <div class="logo">
-                    <h2 class="footer-logo"><span class="web">Web</span><span class="studio-white">Studio</span></h2>
                 </div>
-                <address class="address">
-                    <a href="#" class="address-text"> <p class="footer">м. Київ, пр-т Лесі Українки, 26</p></a>
-                    <a href="info@devstudio.com" class="address-text"> <p class="grey">info@devstudio.com</p></a>
-                    <p class="grey">+38 096 111 11 11</p>
-                </address>
-                
-           
-           </footer>
-        
-        </section>
+            </section>
         </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="logo">
+                        <h2 class="footer-logo"><span class="web">Web</span><span class="studio-white">Studio</span></h2>
+                    </div>
+                    <address class="address">
+                        <a href="#" class="address-text"> <p class="footer">м. Київ, пр-т Лесі Українки, 26</p></a>
+                        <a href="info@devstudio.com" class="address-text"> <p class="grey">info@devstudio.com</p></a>
+                        <p class="grey">+38 096 111 11 11</p>
+                    </address>
+                </div>
+           </footer>
        
 </body>
 </html>
