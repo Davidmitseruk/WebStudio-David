@@ -358,6 +358,59 @@ header{
     line-height: 24px;
 }
 /*what do we do*/
+.activity-div > .activity-name{
+    position: absolute;
+    bottom: -663px;
+}
+
+.activity-name{
+    color: var(--primary-background-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.80);
+    padding: 27px 107px;
+}
+.activity-div > .activity-names{
+    position: absolute;
+    bottom: -663px;
+}
+.activity-names{
+    color: var(--primary-background-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.80);
+    padding: 27px 113px;
+}
+.activity-div > .activity-namese{
+    position: absolute;
+    bottom: -663px;
+}
+.activity-namese{
+    padding: 27px 95px;
+    color: var(--primary-background-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.80);
+}
+    
 .activity-list{
     display: flex;
     justify-content: space-between;
