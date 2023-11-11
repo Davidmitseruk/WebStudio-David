@@ -56,7 +56,64 @@
              <section class="post ">
                 <div class="container">
                     <h1 class="post-title">Ефективні рішення для <br>вашого бізнесу</h1>
-                    <button type="button" class="post-button">Замовити послугу</button>
+                    <button type="button" class="post-button" data-modal-open>Замовити послугу</button>
+
+                    <!--madol-window-->
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <button class="modal-close-button" type="button" data-modal-close>
+                                <svg class="modal-icon" width="18" height="18">
+                                    <use href=""></use>
+                                </svg>
+                            </button>
+                            <form class="madol-form">
+                                <p class="modal-form-title">
+                                    Залиште свої дані, ми вам передзвонимо
+                                </p>
+                                <div class="modal-form-field">
+                                    <label for="name" class="modal-form-label">Ім'я
+                                        <input type="text" class="form-input" name="name" id="name">
+                                    </label>
+                                  
+                                        <svg class="modal-form-icon" width="18" height="18">
+                                            <use href="./img/modal-svg/person-black-18dp 1.svg"></use>
+                                        </svg>
+                                </div>
+                                <div class="modal-form-field">
+                                    <label for="tel" class="modal-form-label">Телефон
+                                        <input type="tel" class="form-input" name="tel" id="tel">
+                                    </label>
+                                        <svg class="modal-form-icon" width="18" height="18">
+                                            <use href=""></use>
+                                        </svg>
+                                </div>
+                                <div class="modal-form-field">
+                                    <label for="mail" class="modal-form-label">Пошта
+                                        <input type="email" class="form-input" name="email" id="mail">
+                                    </label>
+                                        <svg class="modal-form-icon" width="18" height="18">
+                                            <use href=""></use>
+                                        </svg>
+                                </div>
+                                <div class="modal-form-field">
+                                    <label for="comment" class="modal-form-label">
+                                        Коментар
+                                    </label>
+                                    <textarea class="comment" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
+
+                                </div>
+                                <label class="modal-form-policy">
+                                    <input type="checkbox" class="modal-form-policy-checkbox" id="policy">
+                                    <span class="modal-form-policy-text">
+                                        Погоджуюся з розсилкою та приймаю
+                                        <a href="#" class="modal-form-policy-link"> Умови договору</a>
+                                    </span>
+                                </label>
+                                <button type="submit" class="agree-btm">Відправити</button>
+                            </form>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
                 <!--about us-->
@@ -411,6 +468,6 @@
                 
            
            </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
