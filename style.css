@@ -140,7 +140,114 @@ footer{
     padding: 20px;
     
 }
+/*modal*/
+.modal-form-title{
+    color: var(--title-text-color);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+.modal-form-label{
+    color: var(--primary-text-color);
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    display: block;
+}
+.modal-form-label-title{
+    color: var(--primary-text-color);
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    display: block;
+}
+.form-input{
+    width: 448px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 528px;
+    min-height: 581px;
+    background-color: var(--primary-background-color);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
+}
+.modal-close-button{
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-background-color);
+    border:1px solid rgba(0, 0, 0, 0.1) ;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 490px;
+    box-sizing: border-box;
+    background-image: url(./img/modal-svg/close-black-18dp\ \(2\)\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-close-button:hover,
+.modal-close-button:focus{
+    background-color: var(--background-button-color);
+    fill: var(--primary-background-color);
+}
+.modal-icon{
+    fill: var(--logo-color);
+}
+.modal-icon:hover,
+.modal-icon:focus{
+    fill: #2196F3;
+}
+.comment{
+    width: 448px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+}
+.modal-form{
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+.modal-form-field{
+    position: relative;
+    margin-bottom: 10px;
+}
 /*header*/
 .contacts-list .header-number:hover{
     color: var(--background-button-color);
@@ -358,6 +465,59 @@ header{
     line-height: 24px;
 }
 /*what do we do*/
+.activity-div > .activity-name{
+    position: absolute;
+    bottom: -663px;
+}
+
+.activity-name{
+    color: var(--primary-background-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.80);
+    padding: 27px 107px;
+}
+.activity-div > .activity-names{
+    position: absolute;
+    bottom: -663px;
+}
+.activity-names{
+    color: var(--primary-background-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.80);
+    padding: 27px 113px;
+}
+.activity-div > .activity-namese{
+    position: absolute;
+    bottom: -663px;
+}
+.activity-namese{
+    padding: 27px 95px;
+    color: var(--primary-background-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.80);
+}
+    
 .activity-list{
     display: flex;
     justify-content: space-between;
