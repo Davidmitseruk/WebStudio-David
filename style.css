@@ -9,6 +9,8 @@
 --secondary-background-color:#2F303A;
 --port-button-color:#EEEEEE;
 --icon-fill:#AFB1B8;
+--background-color-after:#135285;
+--time-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 *,
@@ -361,14 +363,25 @@ footer{
     margin-right: 7px;
 }
 /*header*/
+.contacts-item .header-number{
+    transition: color 250ms var(--time-function);
+}
+.header-number .icon-phone{
+    transition: fill 250ms var(--time-function);
+}
+.header-number .icon-envelope{
+    transition: fill 250ms var(--time-function);
+}
 .contacts-list .header-number:hover{
     color: var(--background-button-color);
 }
 .header-number:hover .icon-phone{
     fill: var(--background-button-color);
+    transition: color 250ms var(--time-function);
 }
 .header-number:hover .icon-envelope{
     fill: var(--background-button-color);
+    transition: color 250ms var(--time-function);
 }
 .icon-phone{
     margin-left: 10px;
@@ -575,9 +588,13 @@ header{
     line-height: 24px;
 }
 /*what do we do*/
+.activity-div{
+    position: relative;
+}
 .activity-div > .activity-name{
-    position: absolute;
-    bottom: -663px;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
 }
 
 .activity-name{
@@ -592,41 +609,9 @@ header{
     text-transform: uppercase;
     background: rgba(47, 48, 58, 0.80);
     padding: 27px 107px;
+    width: 100%;
 }
-.activity-div > .activity-names{
-    position: absolute;
-    bottom: -663px;
-}
-.activity-names{
-    color: var(--primary-background-color);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    background: rgba(47, 48, 58, 0.80);
-    padding: 27px 113px;
-}
-.activity-div > .activity-namese{
-    position: absolute;
-    bottom: -663px;
-}
-.activity-namese{
-    padding: 27px 95px;
-    color: var(--primary-background-color);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    background: rgba(47, 48, 58, 0.80);
-}
+
     
 .activity-list{
     display: flex;
@@ -759,7 +744,7 @@ color: var(--primary-text-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    transition: background-color 250ms var(--time-function), fill 250ms var(--time-function);
 }
 .team-svg{
     width: 20px;
@@ -780,19 +765,23 @@ color: var(--primary-text-color);
 }
 .last-section-item{
     margin-left: 30px;
+    
 }
 .last-section-div{
     width: 170px;
     height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    box-sizing: border-box; 
 }
 .last-section-svg{
     width: 170px;
     height: 92px;
     border: 1px solid var(--icon-fill);
     border-radius: 4px;
-    fill: var(--icon-fill);
-    display: flex;
-    
+    fill: var(--icon-fill);  
+    transition: border-color 250ms var(--time-function), fill 250ms var(--time-function);
 }
 .last-section-svg:hover,
 .last-section-svg:focus{
@@ -876,7 +865,7 @@ text-transform: uppercase;
     height: 50px;
     flex-shrink: 0;
     border-radius: 4px;
-    background: var(--background-button-color);
+    background-color: var(--background-button-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: #FFF;
     text-align: center;
@@ -890,6 +879,11 @@ text-transform: uppercase;
     align-items: center;
     justify-content: center;
     border: none;
+    transition: background-color 250ms var(--time-function);
+}
+.send-email-button:hover{
+    background-color:var(--background-color-after);
+    transition: background-color 250ms var(--time-function);
 }
 .send-email-title{
     color: var(--primary-background-color);
@@ -915,6 +909,11 @@ text-transform: uppercase;
     position: absolute;
     left: 0;
     bottom: -33px;
+    transition: background-color 2000ms ease;
+}
+.site-link:hover.current::after{
+    background-color: var(--background-color-after);
+    transition: background-color 2000ms ease;
 }
 /*overlay*/
 .block-wrap{
@@ -939,4 +938,7 @@ text-transform: uppercase;
 .block-link:hover .overlay{
     transform: translateY(0%);
     opacity: 1;
+}
+.footer-svag-paperplane{
+    margin-left: 10px;
 }
